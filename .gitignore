@@ -99,3 +99,5 @@ lint/tmp/
 /build
 /captures
 .cxx
+/.idea/deploymentTargetDropDown.xml
+/.idea/migrations.xml
