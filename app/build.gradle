@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "br.com.sandiego.netdroid"
-        minSdk 21
+        minSdk 23
         targetSdk 34
         versionCode 1
         versionName "0.1"
@@ -53,5 +53,10 @@ allprojects {
         configureEach {
             options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
         }
+    }
+}
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
